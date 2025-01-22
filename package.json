@@ -1,0 +1,21 @@
+{
+  "name": "apptweak-server",
+  "version": "1.0.0",
+  "description": "An MCP server for searching app details using the AppTweak API",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "start": "node build/index.js",
+    "dev": "tsc -w"
+  },
+  "keywords": ["mcp", "apptweak", "api"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.1.0",
+    "axios": "^1.6.2",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
