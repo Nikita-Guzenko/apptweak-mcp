@@ -2,6 +2,8 @@
 
 An MCP server that provides tools for app store analytics and competitor analysis using the AppTweak API.
 
+<a href="https://glama.ai/mcp/servers/ym377qzb03"><img width="380" height="200" src="https://glama.ai/mcp/servers/ym377qzb03/badge" alt="AppTweak Server MCP server" /></a>
+
 ## Features
 
 - App store analytics
