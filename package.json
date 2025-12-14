@@ -1,21 +1,39 @@
 {
-  "name": "apptweak-server",
-  "version": "1.0.0",
-  "description": "An MCP server for searching app details using the AppTweak API",
+  "name": "apptweak-mcp",
+  "version": "2.0.0",
+  "description": "Comprehensive AppTweak MCP server for ASO - keyword research, competitor analysis, and market intelligence",
   "main": "build/index.js",
   "type": "module",
-  "scripts": {
-    "build": "tsc && chmod +x build/index.js",
-    "start": "node build/index.js",
-    "dev": "tsc -w"
+  "bin": {
+    "apptweak-mcp": "./build/index.js"
   },
-  "keywords": ["mcp", "apptweak", "api"],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node build/index.js",
+    "dev": "npm run build && npm run start"
+  },
+  "keywords": [
+    "mcp",
+    "apptweak",
+    "aso",
+    "app-store-optimization",
+    "keyword-research",
+    "competitor-analysis",
+    "claude",
+    "anthropic"
+  ],
+  "author": "731Labs",
+  "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^0.1.0",
-    "axios": "^1.6.2",
-    "typescript": "^5.0.0",
-    "@types/node": "^20.0.0"
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
